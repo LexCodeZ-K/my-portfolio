@@ -545,7 +545,7 @@ export default function Portfolio() {
               className="flex justify-center gap-6 flex-wrap"
             >
               {[
-                { icon: Mail, text: "Email", href: "sohahkingsleyalexander@gmail.com" },
+                { icon: Mail, text: "Email", href: "mailto:sohahkingsleyalexander@gmail.com" },
                 { icon: Github, text: "GitHub", href: "https://github.com/LexCodeZ-K" },
                 { icon: Linkedin, text: "LinkedIn", href: "https://linkedin.com/in/kingsley-sohah25" }
               ].map((item, idx) => (
