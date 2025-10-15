@@ -549,20 +549,23 @@ export default function Portfolio() {
                 { icon: Github, text: "GitHub", href: "https://github.com/LexCodeZ-K" },
                 { icon: Linkedin, text: "LinkedIn", href: "https://linkedin.com/in/kingsley-sohah25" }
               ].map((item, idx) => (
-                <motion.a 
-                  key={idx}
-                  variants={{
-                    initial: { opacity: 0, y: 20 },
-                    animate: { opacity: 1, y: 0 }
-                  }}
-                  whileHover={{ scale: 1.1, y: -5 }}
-                  whileTap={{ scale: 0.95 }}
-                  href={item.href}
-                  className={`flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all ${darkMode ? 'bg-gray-800/80 hover:bg-gray-700/80' : 'bg-gray-200/80 hover:bg-gray-300/80'} backdrop-blur-sm`}
-                >
-                  <item.icon size={20} />
-                  {item.text}
-                </motion.a>
+               <motion.a 
+  key={idx}
+  variants={{
+    initial: { opacity: 0, y: 20 },
+    animate: { opacity: 1, y: 0 }
+  }}
+  whileHover={{ scale: 1.1, y: -5 }}
+  whileTap={{ scale: 0.95 }}
+  href={item.href}
+  target={item.href.startsWith('http') || item.href.startsWith('mailto:') ? "_blank" : undefined}
+  rel={item.href.startsWith('http') || item.href.startsWith('mailto:') ? "noopener noreferrer" : undefined}
+  className={`flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all ${darkMode ? 'bg-gray-800/80 hover:bg-gray-700/80' : 'bg-gray-200/80 hover:bg-gray-300/80'} backdrop-blur-sm`}
+>
+  <item.icon size={20} />
+  {item.text}
+</motion.a>
+
               ))}
             </motion.div>
           </div>
