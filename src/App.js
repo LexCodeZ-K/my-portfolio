@@ -168,7 +168,7 @@ export default function Portfolio() {
                 className="mb-8"
               >
                 <img 
-                  src="public\Techy hippy.png" 
+                  src={`${process.env.PUBLIC_URL}/Techy hippy.png`}
                   alt="Kingsley Alexander Sohah" 
                   className="w-56 h-56 rounded-full object-cover mx-auto border-4 border-blue-500 shadow-2xl shadow-blue-500/50"
                 />
