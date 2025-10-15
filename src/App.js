@@ -168,7 +168,7 @@ export default function Portfolio() {
                 className="mb-8"
               >
                 <img 
-                  src="/Techy hippy.png" 
+                  src="public\Techy hippy.png" 
                   alt="Kingsley Alexander Sohah" 
                   className="w-56 h-56 rounded-full object-cover mx-auto border-4 border-blue-500 shadow-2xl shadow-blue-500/50"
                 />
@@ -198,7 +198,7 @@ export default function Portfolio() {
                 transition={{ delay: 0.9, duration: 0.5 }}
                 className="text-lg text-gray-300 mb-12 max-w-2xl mx-auto"
               >
-                Welcome to my portfolio. Let me show you what I've been building.
+                Welcome to my portfolio. Dive into my universe.
               </motion.p>
               
               <motion.button
@@ -577,7 +577,7 @@ export default function Portfolio() {
           className={`py-8 px-6 border-t ${darkMode ? 'border-gray-800' : 'border-gray-200'} relative backdrop-blur-sm`}
         >
           <div className="max-w-6xl mx-auto text-center text-gray-500">
-            <p>© 2025 Kingsley Alexander Sohah. Built with React & Tailwind CSS.</p>
+            <p>© 2025 Kingsley Alexander Sohah. Made with ❤️🧠💻.</p>
           </div>
         </motion.footer>
       </div>
